@@ -86,7 +86,7 @@ public class LabRequestController {
 
         User tester =userLoggedInService.getLoggedInUser();
 
-      return   testRequestUpdateService.assignForLabTest(id,tester);
+        return   testRequestUpdateService.assignForLabTest(id,tester);
     }
 
     @PreAuthorize("hasAnyRole('TESTER')")
